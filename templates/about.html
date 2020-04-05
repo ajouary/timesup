@@ -63,7 +63,7 @@
         <div class="p-3 mb-2 bg-success text-white">
 
 
-            <h3 id="test JS"
+            <h3 id="testJS"
                 onclick="say1();">
                 Hello
 
@@ -72,12 +72,13 @@
 
         <script type="text/javascript" charset="utf-8">
             function say1(){
+                $("#testJS").html("goodbye");
+                $("#testJS").click(function(){
+                    $("#testJS").html("Hello");
+                    $("#testJS").off("click");
+                });
+            };
 
-                
-            }
-
-
-        <script type="text/javascript" charset="utf-8">
             // createGame onclick - emit a message on the 'create' channel to 
             // create a new game with default parameters
             function createGame() {
