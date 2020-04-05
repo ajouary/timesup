@@ -1,0 +1,39 @@
+<html>
+    <head>
+
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"
+        ></script>
+        <title>
+            count
+        </title>
+    </head>
+
+    <body>
+
+        <h1 id="number"
+            onclick="count();"
+            >
+        </h1>
+
+
+
+    </body>
+
+    <script type="text/javascript">
+
+
+        var counter = 0;
+        $("#number").html(counter);
+        function count(){
+            counter = counter + 1;
+            if (counter>1000){counter=0;}
+            $("#number").html(counter);
+        }
+
+        setInterval(function(){
+            $("#number").click();
+
+        },1);
+
+    
+    </script>
