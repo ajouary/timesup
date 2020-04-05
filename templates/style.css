@@ -1,0 +1,27 @@
+@media (min-width:1000px){
+    body{
+        background-color: aquamarine;
+        color: brown;
+    }
+}
+
+
+a{
+    color: gray;
+}
+
+a:hover{
+    color:red;
+    background: black;
+}
+
+h1{
+    font-family: serif;
+    font-size: 50pt;
+}
+.indent{
+    margin-left: 100px;
+}
+.gap_bellow{
+    margin-bottom: 100px;
+}
